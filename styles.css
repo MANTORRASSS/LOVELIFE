@@ -1,0 +1,66 @@
+body {
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif; /* Simple, elegant font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #000000; /* Black header */
+}
+
+h1 {
+    font-size: 36px; /* Big title */
+    margin: 0;
+    text-transform: uppercase; /* Makes "m0m pictures" all caps */
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Space between photos */
+    padding: 20px;
+    max-width: 800px; /* Keeps it neat */
+    margin: 0 auto; /* Centers it */
+}
+
+.photo-grid img {
+    width: 100%; /* Fills the column */
+    height: auto; /* Keeps photo shape */ /* Makes photos black-and-white */
+    border: 2px solid #ffffff; /* White border for elegance */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for videos */
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-grid video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ffffff;
+}.photo-grid img.enlarged {
+    transform: scale(1.5); /* Makes photo bigger when clicked */
+    z-index: 10; /* Puts it on top */
+}.bio {
+    max-width: 800px; /* Same width as photos and videos */
+    margin: 20px auto; /* Centers it with some space */
+    padding: 20px;
+}
+
+.bio p {
+    font-size: 18px; /* Nice readable size */
+    line-height: 1.5; /* Space between lines */
+}
